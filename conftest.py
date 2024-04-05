@@ -20,4 +20,4 @@ def auth_token():
 
 @pytest.fixture()
 def get_title_post():
-    return 'Kek'
+    return 'title'
