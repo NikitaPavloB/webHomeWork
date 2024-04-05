@@ -1,3 +1,4 @@
 login_url: 'https://test-stand.gb.ru/gateway/login'
+post_url: 'https://test-stand.gb.ru/api/posts'
 username: 'Penguin_1'
 password: '746a1d6764'
