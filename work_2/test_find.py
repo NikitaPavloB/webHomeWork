@@ -28,13 +28,7 @@ def test_1(site, set_locator1, set_locator2, set_locator3, set_locator4, set_err
     assert find1.text == set_error
 
 
-def test_2_login(site, set_locator1, set_locator2, set_locator3, set_locator4, set_locator5, set_error):
-    selector1 = set_locator1
-    input1 = site.find_element('xpath', selector1)
-    input1.send_keys(data['login'])
-    selector2 = set_locator2
-    input2 = site.find_element('xpath', selector2)
-    input2.send_keys(data['password'])
+def test_2_login(site, login_with_credentials, set_locator3, set_locator4, set_locator5, set_error):
     selector3 = set_locator3
     input3 = site.find_element('css', selector3)
     input3.click()
@@ -47,6 +41,7 @@ def test_2_login(site, set_locator1, set_locator2, set_locator3, set_locator4, s
     except TimeoutException:
         # В случае неудачной авторизации выводим сообщение об ошибке
         print("Ошибка: Элемент для успешной авторизации не найден на странице.")
+
 
 
 def test_add_post(site, login_with_credentials, set_locator3, create_new_post, post_title_selector, submit_description_selector, post_content_selector, add_post_selector):
