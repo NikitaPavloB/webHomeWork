@@ -37,3 +37,25 @@ def site():
     site_instance = Site(data['address'])
     yield site_instance
     site_instance.quit()
+
+
+# Создание нового поста
+@pytest.fixture()
+def create_new_post():
+    return '''/html/body/div[1]/main/div/div[2]/div[1]/button'''
+
+@pytest.fixture
+def post_title_selector():
+    return """//*[@id="create-item"]/div/div/div[1]/div/label/input"""
+
+@pytest.fixture
+def submit_description_selector():
+    return """//*[@id="create-item"]/div/div/div[2]/div/label/span/textarea"""
+
+@pytest.fixture
+def post_content_selector():
+    return """//*[@id="create-item"]/div/div/div[3]/div/label/span/textarea"""
+
+@pytest.fixture
+def add_post_selector():
+    return """//*[@id="create-item"]/div/div/div[7]/div/button/span"""
