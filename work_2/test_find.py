@@ -49,25 +49,23 @@ def test_2_login(site, set_locator1, set_locator2, set_locator3, set_locator4, s
         print("Ошибка: Элемент для успешной авторизации не найден на странице.")
 
 
-def test_add_post(site,set_locator1, set_locator2, set_locator3, create_new_post, post_title_selector, submit_description_selector, post_content_selector, add_post_selector):
-    selector1 = set_locator1
-    input1 = site.find_element('xpath', selector1)
-    input1.send_keys(data['login'])
-    selector2 = set_locator2
-    input2 = site.find_element('xpath', selector2)
-    input2.send_keys(data['password'])
+def test_add_post(site, login_with_credentials, set_locator3, create_new_post, post_title_selector, submit_description_selector, post_content_selector, add_post_selector):
     selector3 = set_locator3
     input3 = site.find_element('css', selector3)
     input3.click()
+
     new_post = site.find_element(By.XPATH, create_new_post)
     new_post.click()
+
     # Вводим заголовок и содержимое поста
     post_title = site.find_element(By.XPATH, post_title_selector)
-    post_title.send_keys('Тестовый пост')
+    post_title.send_keys('Домашнее задание №2')
+
     post_description = site.find_element(By.XPATH, submit_description_selector)
-    post_description.send_keys('Домашнее задание №2')
+    post_description.send_keys('Тестовый пост')
+
     post_content = site.find_element(By.XPATH, post_content_selector)
-    post_content.send_keys('Это тестовый пост.')
+    post_content.send_keys('Выполненное второе домашнее задание')
 
     # Нажимаем кнопку отправки поста
     submit_post = site.find_element(By.XPATH, add_post_selector)
@@ -77,9 +75,9 @@ def test_add_post(site,set_locator1, set_locator2, set_locator3, create_new_post
     time.sleep(data['sleep_time'])
 
     # Добавляем явное ожидание для проверки появления названия поста на странице
-    wait = WebDriverWait(site, 10)
+    wait = WebDriverWait(site.driver, 10)
     try:
         post_title_on_page = wait.until(EC.presence_of_element_located((By.XPATH, post_title_selector)))
-        assert post_title_on_page.text == 'Тестовый пост'
+        assert post_title_on_page.text == 'Домашнее задание №2'
     except TimeoutException:
         print("Название поста не найдено на странице")
