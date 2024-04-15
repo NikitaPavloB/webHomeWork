@@ -1,0 +1,30 @@
+2024-04-16 01:08:19 INFO ====== WebDriver manager ======
+2024-04-16 01:08:20 INFO Get LATEST chromedriver version for google-chrome
+2024-04-16 01:08:20 INFO Get LATEST chromedriver version for google-chrome
+2024-04-16 01:08:20 INFO Driver [C:\Users\KIND\.wdm\drivers\chromedriver\win64\123.0.6312.122\chromedriver-win32/chromedriver.exe] found in cache
+2024-04-16 01:08:22 INFO Send test in //*[@id="login"]/div[1]/label/input
+2024-04-16 01:08:22 INFO Send test in //*[@id="login"]/div[2]/label/input
+2024-04-16 01:08:22 INFO Click login button
+2024-04-16 01:08:23 INFO We found text 401 in error field //*[@id="app"]/main/div/div/div[2]/h2
+2024-04-16 01:08:23 INFO Send Penguin_1 in //*[@id="login"]/div[1]/label/input
+2024-04-16 01:08:23 INFO Send 746a1d6764 in //*[@id="login"]/div[2]/label/input
+2024-04-16 01:08:23 INFO Click login button
+2024-04-16 01:08:25 INFO We found check Home checkbox during login //*[@id="app"]/main/nav/a
+2024-04-16 01:08:25 INFO Send Penguin_1 in //*[@id="login"]/div[1]/label/input
+2024-04-16 01:08:25 INFO Send 746a1d6764 in //*[@id="login"]/div[2]/label/input
+2024-04-16 01:08:25 INFO Click login button
+2024-04-16 01:08:25 INFO Click new post button
+2024-04-16 01:08:26 INFO Send Домашняя работа №4 to title field
+2024-04-16 01:08:26 INFO Send Это было весело to description field
+2024-04-16 01:08:26 INFO Send Станислав, спасибо Вам большое за занятия! to post field
+2024-04-16 01:08:26 INFO Click add_post button
+2024-04-16 01:08:29 INFO We found check Домашняя работа №4 checkbox for creating a post //*[@id="app"]/main/div/div[1]/h1
+2024-04-16 01:08:29 INFO Send Penguin_1 in //*[@id="login"]/div[1]/label/input
+2024-04-16 01:08:30 INFO Send 746a1d6764 in //*[@id="login"]/div[2]/label/input
+2024-04-16 01:08:30 INFO Click login button
+2024-04-16 01:08:31 INFO We found check Home checkbox during login //*[@id="app"]/main/nav/a
+2024-04-16 01:08:31 INFO Click contact button
+2024-04-16 01:08:31 INFO Send Nikita Pavlov to name field
+2024-04-16 01:08:31 INFO Send nikpav@yandex.ru to email field
+2024-04-16 01:08:31 INFO Send This is a test message for Contact Us form to content field
+2024-04-16 01:08:31 INFO Click contact button
