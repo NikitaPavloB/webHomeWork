@@ -1,0 +1,32 @@
+address: https://test-stand.gb.ru
+browser: chrome
+sleep_time: 5
+login: 'Penguin_1'
+password: '746a1d6764'
+status_error: '401'
+
+new_post_title: 'Домашняя работа №4'
+new_post_description: 'Это было весело'
+new_post_content: 'Станислав, спасибо Вам большое за занятия!'
+
+
+
+LOGIN_FIELD: '//*[@id="login"]/div[1]/label/input'
+PASS_FIELD: '//*[@id="login"]/div[2]/label/input'
+LOGIN_BIN: 'button'
+ERROR_FIELD: '//*[@id="app"]/main/div/div/div[2]/h2'
+CHECK_TEXT: '//*[@id="app"]/main/nav/a'
+CHECK_CONTACT: '//*[@id="app"]/main/nav/ul/li[2]/a'
+CHECK_CONTACTUS: '//*[@id="app"]/main/div/div/h1'
+CHECK_NAME: '//*[@id="contact"]/div[1]/label/input'
+CHECK_EMAIL: '//*[@id="contact"]/div[2]/label/input'
+CHECK_CONTENT: '//*[@id="contact"]/div[3]/label/span/textarea'
+CONTACT_BIN: '//*[@id="contact"]/div[4]/button'
+
+new_post: '/html/body/div[1]/main/div/div[2]/div[1]/button'
+post_title: '//*[@id="create-item"]/div/div/div[1]/div/label/input'
+description_selector: '//*[@id="create-item"]/div/div/div[2]/div/label/span/textarea'
+post_content: '//*[@id="create-item"]/div/div/div[3]/div/label/span/textarea'
+add_post: '//*[@id="create-item"]/div/div/div[7]/div/button/span'
+check_title: '//*[@id="app"]/main/div/div[1]/h1'
+
